@@ -1,0 +1,77 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: coral;
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.calculator {
+  width: 200px;
+  background: white;
+  background-size: 0vmax;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(
+    4,
+    1fr
+  ); /* Erstellt vier gleich große Spalten */
+  grid-template-rows: repeat(4, 1fr); /* Erstellt vier gleich große Zeilen */
+  gap: 10px; /* Setzt den Abstand zwischen den Tasten */
+  padding: 10px; /* Fügt einen Abstand rund um das Grid hinzu */
+}
+
+.buttons button:hover {
+  /* Stiländerung, wenn eine Taste gehovert wird */
+  background-color: #d0d0d0; /* Dunklerer Hintergrund beim Hover */
+  transform: scale(1.1); /* Vergrößert die Taste leicht beim Hover */
+  cursor: pointer; /* Ändert den Cursor in einen Zeiger */
+}
+
+#display {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 5px;
+  background-color: rosybrown;
+  font-family: "Grey Qo", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+}
+/* Container-Stil für die Sidebar */
+.sidebar {
+  width: 400px; /* Breite der Sidebar */
+  height: 100vh; /* Volle Höhe der Ansicht */
+  background-color: #f4f4f4; /* Hintergrundfarbe der Sidebar */
+  padding: 20px; /* Innenabstand */
+  box-sizing: border-box; /* Damit Padding die Breite nicht beeinflusst */
+  position: fixed; /* Sidebar bleibt beim Scrollen an Ort und Stelle */
+  left: 0; /* Positionierung am linken Rand */
+  top: 0; /* Positionierung am oberen Rand */
+}
+/* Stil für die ungeordnete Liste */
+.sidebar ul {
+  list-style: none; /* Entfernt die Standard-Listensymbole */
+  padding: 0; /* Entfernt den Standard-Innenabstand */
+  margin: 0; /* Entfernt den Standard-Außenabstand */
+}
+/* Stil für Listenelemente */
+.sidebar li {
+  padding: 10px; /* Abstand innerhalb jedes Listenelements */
+  border-bottom: 1px solid #ddd; /* Trennlinie zwischen den Elementen */
+}
+/* Stil für das letzte Listenelement */
+.sidebar li:last-child {
+  border-bottom: none; /* Entfernt die Trennlinie am letzten Element */
+}
