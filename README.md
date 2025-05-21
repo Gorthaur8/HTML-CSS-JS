@@ -30,5 +30,5 @@ CSS3,
 (Optional: JavaScript),
 
 🖼️ Vorschau,
-![grafik](<test_Image.png)
+!grafik(<test_Image.png)
 Bild
