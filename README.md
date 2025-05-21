@@ -24,7 +24,7 @@ Optional einfache Logik mit JavaScript (Grundrechenarten),
 Responsive Design (Hover and Click),
 Designed im Selbststudium,
 
-**🔧 Technologien **
+<h1>**🔧 Technologien**</h1> 
 HTML5,
 CSS3,
 (Optional: JavaScript),
